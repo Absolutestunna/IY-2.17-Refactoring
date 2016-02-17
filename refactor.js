@@ -284,9 +284,12 @@ var accelerate = function(amount) {
 // Put your answer below -------------------------
 // The setting speed was returning a number because the evaluated
 // elements in the accelerate func isn't been returned.
-var speed = 1;
+var speed = 0;
 
 var accelerate = function(amount) {
+  if (isNaN(amount)){
+    return 1;
+  }
   return speed += amount;
 };
 
