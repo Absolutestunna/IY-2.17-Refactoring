@@ -282,7 +282,13 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
+// The setting speed was returning a number because the evaluated
+// elements in the accelerate func isn't been returned.
+var speed = 1;
 
+var accelerate = function(amount) {
+  return speed += amount;
+};
 
 // -----------------------------------------------
 
