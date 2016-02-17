@@ -331,6 +331,14 @@ var callLater = function(timeout, callback) {
 };
 
 // Put your answer below -------------------------
+var checkFunc(a, b){
+  if (arguments.length == 2){
+    callLater(a, b);
+  }else {
+    callLater(1000, a);
+  }
+}
+checkFunc(func);
 
 
 // -----------------------------------------------
