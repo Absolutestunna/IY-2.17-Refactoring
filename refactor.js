@@ -24,15 +24,15 @@
 // function
 
 function doSomethingCool() {
-  console.log("Something Cool!");
+  console.log("Something Cool");
 }
-
+doSomethingCool();
 // Put your answer below -------------------------
 var doSomethingCool = function(){
   console.log("Something Cool!");
 
 }
-
+doSomethingCool();
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -109,7 +109,7 @@ var reverseStr = function(str) {
 // Put your answer below -------------------------
 var reverseStr = function(str) {
   return arr.split("").reverse().join("");
-
+}
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -334,14 +334,15 @@ var callLater = function(timeout, callback) {
 };
 
 // Put your answer below -------------------------
-var checkFunc(a, b){
+function checkFunc(a, b){
   if (arguments.length == 2){
     callLater(a, b);
   }else {
     callLater(1000, a);
   }
-}
-checkFunc(func);
+};
+checkFunc(func, season)
+
 
 
 // -----------------------------------------------
