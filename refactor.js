@@ -334,14 +334,27 @@ var callLater = function(timeout, callback) {
 };
 
 // Put your answer below -------------------------
-function checkFunc(a, b){
+// function checkFunc(a, b){
+//   if (arguments.length == 2){
+//     callLater(a, b);
+//   }else {
+//     callLater(1000, a);
+//   }
+// };
+// checkFunc(func, season)
+
+var callLater = function(timeout, callback) {
   if (arguments.length == 2){
-    callLater(a, b);
+   callLater = function(timeout, callback) {
+    return setTimeout(callback, timeout);
+    }
   }else {
-    callLater(1000, a);
+    callLater = function(1000, callback) {
+      return setTimeout(callback, 1000);
+    };
   }
+
 };
-checkFunc(func, season)
 
 
 
